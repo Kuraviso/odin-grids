@@ -1,0 +1,169 @@
+:root {
+  --title-font: "Julius Sans One";
+  --text-font: "Istok Web", Sans-serif;
+  --gradient: linear-gradient(
+    45deg,
+    #34d399,
+    #6ee7b7,
+    #a7f3d0,
+    #a5f3fc,
+    #67e8f9,
+    #22d3ee
+  );
+  --main-color: #ecfdf5;
+  --accent-color-1: #67e8f9;
+  --accent-color-2: #eab308;
+  --font-color: #082f49;
+  --border-color: rgba(8, 47, 73, 0.079);
+}
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  /* border: 1px solid; */
+}
+
+body {
+  font-family: var(--text-font);
+  background: var(--gradient);
+  background-size: 300vh;
+  animation: bg-animation 20s infinite alternate;
+  background-repeat: no-repeat;
+  height: 100vh;
+}
+
+@keyframes bg-animation {
+  0% {
+    background-position: right;
+  }
+  100% {
+    background-position: left;
+  }
+}
+
+.glass-container {
+  background-color: #ecfdf57d;
+  backdrop-filter: blur(3px);
+  border-radius: 30px;
+  margin: 20px;
+  display: grid;
+
+  grid-template-columns: 250px 1fr;
+}
+
+.sidebar {
+  grid-row: span 2;
+  height: 100%;
+  display: grid;
+  grid-template-rows: repeat(3, 1fr);
+  border-right: 0.5px solid var(--border-color);
+}
+
+.sidebar-title {
+  display: flex;
+  margin: 0 auto;
+  padding-top: 80px;
+  height: fit-content;
+  font-family: var(--title-font);
+}
+
+.sidebar-title-logo {
+  color: var(--accent-color-2);
+  align-self: center;
+  justify-content: center;
+}
+
+.sidebar-navbar,
+.sidebar-ssp {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  justify-content: center;
+  padding-left: 40px;
+}
+
+.sidebar-navbar-link,
+.sidebar-ssp-link {
+  display: flex;
+  gap: 10px;
+}
+
+.sidebar-navbar-link a,
+.sidebar-ssp-link a {
+  text-decoration: none;
+  color: var(--font-color);
+  font-size: 1.3rem;
+  transition: transform 0.2s ease-in-out;
+}
+
+a:hover {
+  color: var(--accent-color-2);
+  transform: scale(1.1) translateY(-3px);
+  text-shadow: 1px 1px 1px var(--font-color);
+}
+
+.topbar {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  border-bottom: 0.5px solid var(--border-color);
+  box-shadow: 0px 2px 3px var(--border-color);
+}
+
+.topbar-searchbar {
+  margin: 0 auto;
+  align-self: center;
+  padding: 5px;
+}
+
+.topbar-searchbar > input {
+  width: 300px;
+  align-self: center;
+  background-color: var(--main-color);
+  border: 0.1px solid var(--font-color);
+  border-radius: 20px;
+  height: 30px;
+  text-align: center;
+}
+
+.topbar-searchbar > span {
+  position: absolute;
+  top: 38px;
+  left: 615px;
+}
+
+input::placeholder {
+  align-self: center;
+  text-align: center;
+}
+
+.topbar-notifications {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  padding-right: 100px;
+}
+
+.topbar-notifications-avatar {
+  width: 80px;
+  background-image: var(--gradient);
+  background-clip: padding-box;
+  border-radius: 100px;
+}
+
+.topbar-notifications-name {
+  padding-left: 15px;
+  font-size: 1.1rem;
+}
+
+.topbar-notifications-bell {
+  padding-right: 25px;
+  transition: transform 0.3s ease-in-out;
+}
+
+.topbar-notifications-bell:hover {
+  transform: scale(1.3);
+}
