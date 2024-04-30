@@ -303,6 +303,7 @@ input::placeholder {
 
 .main-announcements-title {
   margin: 0 0 20px 20px;
+  padding: 10px;
 }
 
 .main-announcements-container {
@@ -332,6 +333,7 @@ input::placeholder {
   justify-content: center;
   margin: 0 auto;
   gap: 15px;
+  padding: 10px;
 }
 
 .post-wrapper {
