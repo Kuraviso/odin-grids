@@ -46,7 +46,7 @@ function createCard(title, description) {
 }
 
 function createPost(name, post) {
-  const postContainer = document.querySelector(".main-trending");
+  const postContainer = document.querySelector(".post-wrapper");
   const random = Math.floor(Math.random() * 6) + 1;
 
   const container = document.createElement("div");
@@ -55,7 +55,9 @@ function createPost(name, post) {
   const user = document.createElement("h5");
 
   //add the required classes
+  container.classList.add("post-container");
   icon.classList.add("material-symbols-outlined");
+  icon.classList.add("user-icon");
 
   //add a random image for the profile picture
   if (random == 1) {
