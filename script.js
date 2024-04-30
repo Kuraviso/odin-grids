@@ -11,7 +11,7 @@ function createCard(title, description) {
   const icon3 = document.createElement("span");
 
   //add the required classes
-  card.classList.add("main-container-card");
+  card.classList.add("main-container-cards");
   heading.classList.add("main-container-card-title");
   content.classList.add("main-container-card-text");
   logos.classList.add("card-logo-container");
@@ -78,5 +78,5 @@ for (let i = 0; i < 5; i++) {
 
 //create 6 cards dinamically
 for (i = 0; i < 6; i++) {
-  createCard("card Title", "this is a card created synamically");
+  createCard("card Title", "this is a card created dynamically");
 }

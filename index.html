@@ -45,7 +45,7 @@
           </div>
           <div class="sidebar-navbar-link">
             <span class="material-symbols-outlined"> history </span>
-            <a href="#">history</a>
+            <a href="#">History</a>
           </div>
           <div class="sidebar-navbar-link">
             <span class="material-symbols-outlined"> description </span>
@@ -81,26 +81,21 @@
             id="search"
             placeholder="Search...."
           />
-          <span class="material-symbols-outlined"> search </span>
         </div>
         <div class="topbar-notifications">
           <span class="material-symbols-outlined topbar-notifications-bell">
             notifications_unread
           </span>
-          <!-- <span class="material-symbols-outlined topbar-notifications-avatar">
-            account_circle
-          </span> -->
           <img src="./assets/icon.svg" class="topbar-notifications-avatar" />
           <p class="topbar-notifications-name">Carlos Gutierrez</p>
         </div>
         <div class="topbar-greeting">
-          <span class="material-symbols-outlined topbar-greeting-avatar">
-            account_circle
-          </span>
-          <p class="topbar-greeting-text">Hi there,</p>
+          <img src="./assets/icon.svg" class="topbar-greeting-avatar" />
           <div class="topbar-greeting-container">
-            <p class="topbar-greeting-container-username">Carlos Gutierrez</p>
-            <p class="topbar-greeting-container-social">(@Carlosgherbaz)</p>
+            <p class="topbar-greeting-text">Hi there,</p>
+            <p class="topbar-greeting-container-username">
+              Carlos Gutierrez (@Carlosgherbaz)
+            </p>
           </div>
         </div>
         <div class="topbar-buttons">
@@ -111,19 +106,20 @@
       </div>
 
       <div class="main">
-        <div class="main-container">
+        <!-- <div class="main-container"> -->
+        <div class="main-container-card" id="card">
           <h2 class="main-container-title">Projects</h2>
-          <div class="main-container-card" id="card">
-            <!-- the internal cards will be created dinamically using JS-->
-            <!-- used classes  
-                "main-container-card"
+          <!-- the internal cards will be created dinamically using JS-->
+          <!-- used classes  
+                "main-container-cards"
                 "main-container-card-title"
                 "main-container-card-text"
                 "card-logo-container"
             -->
-          </div>
+          <!-- </div> -->
         </div>
         <div class="main-announcements">
+          <h2 class="main-announcements-title">Announcements</h2>
           <p class="main-announcements-text">
             Lorem ipsum dolor sit, amet consectetur adipisicing elit.
           </p>
@@ -138,6 +134,7 @@
           </p>
         </div>
         <div class="main-trending">
+          <h2 class="main-trending-title">Trending</h2>
           <!-- Created dinamically using JS -->
         </div>
       </div>
