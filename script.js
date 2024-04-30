@@ -22,10 +22,13 @@ function createCard(title, description) {
 
   //create the icons
   icon1.classList.add("material-symbols-outlined");
+  icon1.classList.add("icon");
   icon1.innerText = "star";
   icon2.classList.add("material-symbols-outlined");
+  icon2.classList.add("icon");
   icon2.innerText = "add_circle";
   icon3.classList.add("material-symbols-outlined");
+  icon3.classList.add("icon");
   icon3.innerText = "share";
 
   //append logo elements
