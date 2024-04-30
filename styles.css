@@ -270,6 +270,7 @@ input::placeholder {
   background-color: var(--card-color);
   border-radius: 25px;
   gap: 10px;
+  border-left: 5px solid var(--accent-color-2);
 }
 
 .main-container-card-title {
